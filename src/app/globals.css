@@ -6,6 +6,46 @@
   --background: #000000;
   --foreground: #ffffff;
   --yellow: #ffd500;
+  /* Shape Physics paints its canvas with this; fall back to the page colour. */
+  --theme-background: #000000;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .marquee-track {
+    animation: none !important;
+  }
+}
+
+/* Infinite ticker: the track holds two identical copies and slides by half. */
+@keyframes marquee-left {
+  from {
+    transform: translate3d(0, 0, 0);
+  }
+  to {
+    transform: translate3d(-50%, 0, 0);
+  }
+}
+
+@keyframes marquee-right {
+  from {
+    transform: translate3d(-50%, 0, 0);
+  }
+  to {
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.marquee-track {
+  animation: marquee-left 32s linear infinite;
+  will-change: transform;
+}
+
+.marquee-track-reverse {
+  animation-name: marquee-right;
+}
+
+.marquee:hover .marquee-track {
+  animation-play-state: paused;
 }
 
 body {
