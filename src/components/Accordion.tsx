@@ -34,7 +34,7 @@ export default function Accordion() {
             </span>{" "}
             <span className="text-xl sm:text-3xl self-center">
               {" "}
-              Consultation
+              Our Mission
             </span>
           </h3>
           <div className="flex justify-center items-center text-2xl border rounded-full w-10 h-10 bg-white">
@@ -44,9 +44,14 @@ export default function Accordion() {
         {activeSection === 1 && (
           <div className="py-7 border-t">
             <p>
-              Discuss your business goals and objectives, target audience, and
-              current marketing efforts to tailor our services to meet your
-              specific requirements.
+              To build $COOKED into a recognizable, crypto-native meme brand
+              powered by creativity, humor, and community participation. Our
+              mission isn't to predict the next market move or promise anyone
+              financial freedom. It's to create an original story, a recognizable
+              identity, and a community people want to be part of. Through
+              memes, satire, and community-driven content, we're turning the
+              shared chaos of crypto into a movement. We don't predict the
+              market. We meme the madness.
             </p>
           </div>
         )}
@@ -66,7 +71,8 @@ export default function Accordion() {
               02
             </span>{" "}
             <span className="text-xl sm:text-3xl self-center">
-              Research and Strategy Development
+              {" "}
+              Tokenomics
             </span>
           </h3>
           <div className="flex justify-center items-center text-2xl border rounded-full w-10 h-10 bg-white">
@@ -75,136 +81,34 @@ export default function Accordion() {
         </div>
         {activeSection === 2 && (
           <div className="py-7 border-t">
-            <p>
-              Conduct thorough market research to understand your target
-              audience and develop a strategic plan to achieve your business
-              objectives.
+            <p className="mb-4">
+              $COOKED is a meme coin project planned for BNB Chain. We believe
+              token details should be clear, accessible, and verifiable.
             </p>
-          </div>
-        )}
-      </div>
-
-      <div
-        className={`${
-          activeSection === 3 ? "bg-green" : "bg-gray"
-        } border border-b-4 text-black px-8 sm:px-[60px] py-3 rounded-[45px] mt-4 sm:mt-8`}
-      >
-        <div
-          className="flex justify-between items-center py-7 cursor-pointer"
-          onClick={() => toggleSection(3)}
-        >
-          <h3 className="flex font-medium">
-            <span className="text-3xl sm:text-6xl mr-3 sm:mr-6 font-extrabold">
-              03
-            </span>{" "}
-            <span className="text-xl sm:text-3xl self-center">
-              Implementation
-            </span>
-          </h3>
-          <div className="flex justify-center items-center text-2xl border rounded-full w-10 h-10 bg-white">
-            <span className="text-4xl"> {activeSection === 3 ? "−" : "+"}</span>
-          </div>
-        </div>
-        {activeSection === 3 && (
-          <div className="py-7 border-t">
-            <p>
-              Execute the strategic plan by implementing marketing campaigns,
-              content creation, and other necessary actions.
-            </p>
-          </div>
-        )}
-      </div>
-
-      <div
-        className={`${
-          activeSection === 4 ? "bg-green" : "bg-gray"
-        } border border-b-4 text-black px-8 sm:px-[60px] py-3 rounded-[45px] mt-4 sm:mt-8`}
-      >
-        <div
-          className="flex justify-between items-center py-7 cursor-pointer"
-          onClick={() => toggleSection(4)}
-        >
-          <h3 className="flex font-medium">
-            <span className="text-3xl sm:text-6xl mr-3 sm:mr-6 font-extrabold">
-              04
-            </span>{" "}
-            <span className="text-xl sm:text-3xl self-center">
-              Monitoring and Optimization
-            </span>
-          </h3>
-
-          <div className="flex justify-center items-center text-2xl border rounded-full w-10 h-10 bg-white">
-            <span className="text-4xl"> {activeSection === 4 ? "−" : "+"}</span>
-          </div>
-        </div>
-        {activeSection === 4 && (
-          <div className="py-7 border-t">
-            <p>
-              Continuously monitor the performance of your marketing efforts and
-              make data-driven optimizations to improve results.
-            </p>
-          </div>
-        )}
-      </div>
-
-      <div
-        className={`${
-          activeSection === 5 ? "bg-green" : "bg-gray"
-        } border border-b-4 text-black px-8 sm:px-[60px] py-3 rounded-[45px] mt-4 sm:mt-8`}
-      >
-        <div
-          className="flex justify-between items-center py-7 cursor-pointer"
-          onClick={() => toggleSection(5)}
-        >
-          <h3 className="flex font-medium">
-            <span className="text-3xl sm:text-6xl mr-3 sm:mr-6 font-extrabold">
-              05
-            </span>{" "}
-            <span className="text-xl sm:text-3xl self-center">
-              Reporting and Communication
-            </span>
-          </h3>
-          <div className="flex justify-center items-center text-2xl border rounded-full w-10 h-10 bg-white">
-            <span className="text-4xl"> {activeSection === 5 ? "−" : "+"}</span>
-          </div>
-        </div>
-        {activeSection === 5 && (
-          <div className="py-7 border-t">
-            <p>
-              Provide regular reports and communicate insights to keep you
-              informed about the progress and success of your marketing
-              initiatives.
-            </p>
-          </div>
-        )}
-      </div>
-
-      <div
-        className={`${
-          activeSection === 6 ? "bg-green" : "bg-gray"
-        } border border-b-4 text-black px-8 sm:px-[60px] py-3 rounded-[45px] mt-4 sm:mt-8`}
-      >
-        <div
-          className="flex justify-between items-center py-7 cursor-pointer"
-          onClick={() => toggleSection(6)}
-        >
-          <h3 className="flex font-medium">
-            <span className="text-3xl sm:text-6xl mr-3 sm:mr-6 font-extrabold">
-              06
-            </span>{" "}
-            <span className="text-xl sm:text-3xl self-center">
-              Continual Improvement
-            </span>
-          </h3>
-          <div className="flex justify-center items-center text-2xl border rounded-full w-10 h-10 bg-white">
-            <span className="text-4xl"> {activeSection === 6 ? "−" : "+"}</span>
-          </div>
-        </div>
-        {activeSection === 6 && (
-          <div className="py-7 border-t">
-            <p>
-              Stay ahead of the curve by continuously refining and improving
-              your marketing strategies to adapt to changing market conditions.
+            <ul className="list-disc pl-6 space-y-2">
+              <li>Token name: COOKED</li>
+              <li>Ticker: $COOKED</li>
+              <li>Network: BNB Chain</li>
+              <li>Total supply: 1,000,000,000 (1 billion)</li>
+              <li>Contract address: Coming soon</li>
+              <li>Buy tax: 3%</li>
+              <li>Sell tax: 3%</li>
+              <li>Liquidity: will be locked after launch</li>
+              <li>
+                Token allocation: 75% liquidity pool, 25% team and marketing
+              </li>
+            </ul>
+            <p className="mt-4">
+              Transparency matters. We believe the community deserves to know how
+              the token works and how its supply is distributed. Before launch,
+              we aim to disclose the final tokenomics, contract permissions,
+              creator holdings, and liquidity arrangements clearly.
+              Liquidity-lock details should be published with verifiable proof
+              once the lock is completed. Contract permissions and the team's
+              allocation should also be disclosed so the community can assess
+              the risks independently. Never trust a claim just because it looks
+              good on a website. Verify the details. Question the hype. Don't
+              get cooked by misinformation.
             </p>
           </div>
         )}

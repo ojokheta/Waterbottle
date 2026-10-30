@@ -5,21 +5,21 @@ const Team = () => {
   return (
     <section className="pt-24 md:pt-36 px-4">
       <div className="flex flex-col md:flex-row text-center md:text-start items-center gap-5 md:gap-10">
-        <h2 className="bg-green text-3xl font-bold p-2 rounded-md">Team</h2>
+        <h2 className="bg-green text-3xl font-bold p-2 rounded-md">COMMUNITY</h2>
         <p className="max-w-md">
-          Meet the skilled and experienced team behind our successful digital
-          marketing strategies
+          The influencers have their theories. The algorithms have their
+          predictions. Reality has other plans.
         </p>
       </div>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 pt-8 md:pt-16">
-        {TeamDetails.map((det, idx) => (
+        {CommunityDetails.map((det, idx) => (
           <TeamCard key={idx} {...det} />
         ))}
       </div>
       <div className="sm:justify-self-end mt-10">
         <a href="#!" className="block">
           <button className="w-full bg-dark text-white px-9 py-5 rounded-[14px]">
-            See all team
+            Join the Kitchen
           </button>
         </a>
       </div>
@@ -27,48 +27,48 @@ const Team = () => {
   );
 };
 
-const TeamDetails: TeamCardProps[] = [
+const CommunityDetails: TeamCardProps[] = [
   {
     imageUrl: "/john.png",
-    name: "John Smith",
-    position: "CEO and Founder",
+    name: "Question the Hype",
+    position: "Community Value",
     experience:
-      "10+ years of experience in digital marketing. Expertise in SEO, PPC, and content strategy",
+      "We're building a community that questions the hype, creates the memes, and keeps the $COOKED story alive.",
   },
   {
     imageUrl: "/jane.png",
-    name: "Jane Doe",
-    position: "Director of Operations",
+    name: "Embrace the Chaos",
+    position: "Community Value",
     experience:
-      "7+ years of experience in project management and team leadership. Strong organizational and communication skills",
+      "A shared experience for everyone who has ever trusted the hype, chased the pump, bought the top, or watched a winning trade turn red.",
   },
   {
     imageUrl: "/michael.png",
-    name: "Michael Brown",
-    position: "Senior SEO Specialist",
+    name: "Meme the Madness",
+    position: "Community Value",
     experience:
-      "5+ years of experience in SEO and content creation. Proficient in keyword research and on-page optimization",
+      "We don't need to pretend we know the future. We're here to embrace the chaos, challenge false certainty, and build something together.",
   },
   {
     imageUrl: "/emily.png",
-    name: "Emily Johnson",
-    position: "PPC Manager",
+    name: "The Kitchen is Open",
+    position: "Community Value",
     experience:
-      "3+ years of experience in paid search advertising. Skilled in campaign management and performance analysis",
+      "The next chapter is ours to cook. 🍳🔥 $COOKED — THE ALGORITHM IS LYING.",
   },
   {
     imageUrl: "/brian.png",
-    name: "Brian Williams",
-    position: "Social Media Specialist",
+    name: "No False Certainty",
+    position: "Community Value",
     experience:
-      "4+ years of experience in social media marketing. Proficient in creating and scheduling content, analyzing metrics, and building engagement",
+      "This is more than a joke about bad predictions. It's a movement against fake promises and endless hype.",
   },
   {
     imageUrl: "/sarah.png",
-    name: "John Smith",
-    position: "CEO and Founder",
+    name: "Build Together",
+    position: "Community Value",
     experience:
-      "2+ years of experience in writing and editing Skilled in creating compelling, SEO-optimized content for various industries",
+      "Through memes, satire, and community-driven content, we're turning the shared chaos of crypto into a movement.",
   },
 ];
 
