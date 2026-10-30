@@ -8,9 +8,9 @@ const spaceGrotesk = Space_Grotesk({
 });
 
 export const metadata: Metadata = {
-  title: "Positivus",
+  title: "$COOKED",
   description:
-    "The Positivus is a beautiful and functional landing page design created specifically for digital marketing agencies. With its clean and modern design, Positivus is the perfect template to showcase your agency's services and case studies to potential clients",
+    "$COOKED — the algorithm is lying. A meme coin for everyone who has ever been cooked by the market. Stay cooked.",
 };
 
 export default function RootLayout({

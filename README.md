@@ -1,6 +1,6 @@
-# Positivus Landing Page
+# $COOKED Landing Page
 
-The Positivus is a beautiful and functional landing page design created specifically for digital marketing agencies. With its clean and modern design, Positivus is the perfect template to showcase your agency's services and case studies to potential clients. It is built using Next.js for server-side rendering and Tailwind CSS for styling.This project was inspired by a figma design I came across here -> [Link to the figma design](https://www.figma.com/community/file/1230604708032389430)
+$COOKED is a landing page for a BNB Chain meme coin with a black-and-yellow identity — "the algorithm is lying". It is built using Next.js for server-side rendering and Tailwind CSS for styling. This project was adapted from a Figma landing-page design I came across here -> [Link to the figma design](https://www.figma.com/community/file/1230604708032389430)
 
 ## Table of Contents
 
@@ -49,11 +49,11 @@ Make sure you have Node.js and npm installed on your machine.
 
 1. Clone the repository
    ```sh
-   git clone https://github.com/your-username/positivus-landing-page.git
+   git clone https://github.com/your-username/cooked-landing-page.git
    ```
 2. Navigate to the project directory
    ```sh
-   cd positivus-landing-page
+   cd cooked-landing-page
    ```
 3. Install the dependencies
    ```sh

@@ -21,7 +21,7 @@ const Card = ({
 }: CardProps) => {
   return (
     <div
-      className={`grid grid-cols-2 gap-2 px-4 py-12 md:p-12 rounded-[45px] border border-b-4 max-w-xl w-full ${bgColor}`}
+      className={`grid grid-cols-2 gap-2 px-4 py-12 md:p-12 rounded-[45px] border border-b-4 border-white/10 ${bgColor}`}
     >
       <div className="flex flex-col gap-8 justify-between">
         <h2 className={`text-xl md:text-2xl font-bold leading-7 ${titleColor}`}>

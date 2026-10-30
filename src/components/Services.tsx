@@ -6,7 +6,7 @@ const Services = () => {
   return (
     <div className="pt-24 md:pt-36 px-4">
       <div className="flex flex-col sm:flex-row text-center sm:text-start items-center gap-5 md:gap-10">
-        <h2 className="bg-green text-3xl font-bold p-2 rounded-md">WELCOME TO $COOKED</h2>
+        <h2 className="bg-yellow text-black text-3xl font-bold p-2 rounded-md">WELCOME TO $COOKED</h2>
         <p className="max-w-xl">
           They promised us financial freedom, but showed us only their wins,
           never their losses. They told us to buy and hold while we kept buying
@@ -17,35 +17,37 @@ const Services = () => {
         <Card
           title1="Fake"
           title2="Promises"
-          titleBgColor="bg-green"
-          bgColor="bg-grey"
-          ImgUrl="/seo.png"
+          titleBgColor="bg-yellow"
+          bgColor="bg-dark"
+          imgUrl="/seo.png"
+          iconColor="white"
         />
         <Card
           title1="Fake"
           title2="Certainty"
           titleBgColor="bg-white"
-          bgColor="bg-green"
-          ImgUrl="/pay.png"
+          bgColor="bg-yellow"
+          imgUrl="/pay.png"
         />
         <Card
           title1="Endless"
           title2="Predictions"
           titleBgColor="bg-white"
           bgColor="bg-dark"
-          ImgUrl="/social.png"
+          imgUrl="/social.png"
           iconColor="white"
         />
         <Card
           title1="We're All"
           title2="COOKED"
-          titleBgColor="bg-green"
-          bgColor="bg-grey"
-          ImgUrl="/email-marketing.png"
+          titleBgColor="bg-yellow"
+          bgColor="bg-dark"
+          imgUrl="/email-marketing.png"
+          iconColor="white"
         />
       </div>
 
-      <div className="relative flex justify-between items-center px-8 py-12 md:p-16 rounded-[45px] bg-gray mt-24 lg:mt-36">
+      <div className="relative flex justify-between items-center px-8 py-12 md:p-16 rounded-[45px] bg-dark mt-24 lg:mt-36">
         <div className="max-w-md flex flex-col gap-4">
           <h2 className="font-medium text-3xl">
             The market is unpredictable.
@@ -57,7 +59,7 @@ const Services = () => {
             the absurdity of believing that anyone has the market completely
             figured out.
           </p>
-          <button className="bg-dark py-5 px-5 md:px-9 text-gray rounded-2xl md:self-start">
+          <button className="bg-yellow text-black font-medium py-5 px-5 md:px-9 rounded-2xl md:self-start">
             Join the Kitchen
           </button>
         </div>

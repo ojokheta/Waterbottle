@@ -5,7 +5,7 @@ const Team = () => {
   return (
     <section className="pt-24 md:pt-36 px-4">
       <div className="flex flex-col md:flex-row text-center md:text-start items-center gap-5 md:gap-10">
-        <h2 className="bg-green text-3xl font-bold p-2 rounded-md">COMMUNITY</h2>
+        <h2 className="bg-yellow text-black text-3xl font-bold p-2 rounded-md">COMMUNITY</h2>
         <p className="max-w-md">
           The influencers have their theories. The algorithms have their
           predictions. Reality has other plans.
@@ -18,7 +18,7 @@ const Team = () => {
       </div>
       <div className="sm:justify-self-end mt-10">
         <a href="#!" className="block">
-          <button className="w-full bg-dark text-white px-9 py-5 rounded-[14px]">
+          <button className="w-full bg-yellow text-black font-medium px-9 py-5 rounded-[14px]">
             Join the Kitchen
           </button>
         </a>

@@ -12,17 +12,19 @@ export default function Accordion() {
   return (
     <section className="pt-24 sm:pt-36 px-4">
       <div className="flex flex-col sm:flex-row items-center gap-5 text-center sm:text-start sm:gap-10">
-        <h2 className="bg-green text-3xl font-bold p-2 rounded-sm">
+        <h2 className="bg-yellow text-black text-3xl font-bold p-2 rounded-sm">
           MISSION
         </h2>
         <p className="max-w-xs">
-          We don't predict the market. We meme the madness.
+          We don&apos;t predict the market. We meme the madness.
         </p>
       </div>
       <div
         className={`${
-          activeSection === 1 ? "bg-green" : "bg-gray"
-        } border border-b-4 text-black px-8 sm:px-[60px] py-3 rounded-[45px] mt-4 sm:mt-16`}
+          activeSection === 1
+            ? "bg-yellow text-black border-black/10"
+            : "bg-dark text-white border-white/10"
+        } border border-b-4 px-8 sm:px-[60px] py-3 rounded-[45px] mt-4 sm:mt-16`}
       >
         <div
           className="flex justify-between items-center py-7 cursor-pointer"
@@ -37,7 +39,7 @@ export default function Accordion() {
               Our Mission
             </span>
           </h3>
-          <div className="flex justify-center items-center text-2xl border rounded-full w-10 h-10 bg-white">
+          <div className="flex justify-center items-center text-2xl border rounded-full w-10 h-10 bg-white text-black">
             <span className="text-4xl"> {activeSection === 1 ? "−" : "+"}</span>
           </div>
         </div>
@@ -46,11 +48,11 @@ export default function Accordion() {
             <p>
               To build $COOKED into a recognizable, crypto-native meme brand
               powered by creativity, humor, and community participation. Our
-              mission isn't to predict the next market move or promise anyone
-              financial freedom. It's to create an original story, a recognizable
+              mission isn&apos;t to predict the next market move or promise anyone
+              financial freedom. It&apos;s to create an original story, a recognizable
               identity, and a community people want to be part of. Through
-              memes, satire, and community-driven content, we're turning the
-              shared chaos of crypto into a movement. We don't predict the
+              memes, satire, and community-driven content, we&apos;re turning the
+              shared chaos of crypto into a movement. We don&apos;t predict the
               market. We meme the madness.
             </p>
           </div>
@@ -59,8 +61,10 @@ export default function Accordion() {
 
       <div
         className={`${
-          activeSection === 2 ? "bg-green" : "bg-gray"
-        } border border-b-4 text-black px-8 sm:px-[60px] py-3 rounded-[45px] mt-4 sm:mt-8`}
+          activeSection === 2
+            ? "bg-yellow text-black border-black/10"
+            : "bg-dark text-white border-white/10"
+        } border border-b-4 px-8 sm:px-[60px] py-3 rounded-[45px] mt-4 sm:mt-8`}
       >
         <div
           className="flex justify-between items-center py-7 cursor-pointer"
@@ -75,7 +79,7 @@ export default function Accordion() {
               Tokenomics
             </span>
           </h3>
-          <div className="flex justify-center items-center text-2xl border rounded-full w-10 h-10 bg-white">
+          <div className="flex justify-center items-center text-2xl border rounded-full w-10 h-10 bg-white text-black">
             <span className="text-4xl"> {activeSection === 2 ? "−" : "+"}</span>
           </div>
         </div>
@@ -104,10 +108,10 @@ export default function Accordion() {
               we aim to disclose the final tokenomics, contract permissions,
               creator holdings, and liquidity arrangements clearly.
               Liquidity-lock details should be published with verifiable proof
-              once the lock is completed. Contract permissions and the team's
+              once the lock is completed. Contract permissions and the team&apos;s
               allocation should also be disclosed so the community can assess
               the risks independently. Never trust a claim just because it looks
-              good on a website. Verify the details. Question the hype. Don't
+              good on a website. Verify the details. Question the hype. Don&apos;t
               get cooked by misinformation.
             </p>
           </div>
