@@ -13,10 +13,10 @@ export default function Accordion() {
     <section className="pt-24 sm:pt-36 px-4">
       <div className="flex flex-col sm:flex-row items-center gap-5 text-center sm:text-start sm:gap-10">
         <h2 className="bg-green text-3xl font-bold p-2 rounded-sm">
-          Our Working Process
+          MISSION
         </h2>
         <p className="max-w-xs">
-          Step-by-Step Guide to Achieving Your Business Goals
+          We don't predict the market. We meme the madness.
         </p>
       </div>
       <div

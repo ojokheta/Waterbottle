@@ -9,8 +9,11 @@ const Hero = () => {
       <section className="flex justify-between py-12 pb-10 lg:py-16">
         <article className="flex flex-col items-center md:items-start">
           <h1 className="font-medium text-4xl/normal md:text-6xl/normal lg:max-w-xl">
-            Navigating the digital landscape for success
+            THE ALGORITHM IS LYING.
           </h1>
+          <span className="inline-block mt-4 text-sm font-bold uppercase tracking-wider text-green">
+            WELCOME TO THE KITCHEN 🍳
+          </span>
           <div className="lg:hidden mt-9 lg:mt-0">
             <Image
               src={"/speaker.png"}
@@ -22,12 +25,26 @@ const Hero = () => {
             />
           </div>
           <p className="text-lg md:text-xl py-9 lg:max-w-lg">
-            Our digital marketing agency helps businesses grow and succeed
-            online through a range of services including SEO, PPC, social media
-            marketing, and content creation.
+            The market is cooked. The predictions are cooked. The algorithm is
+            cooked.
+          </p>
+          <p className="text-lg md:text-xl py-9 lg:max-w-lg">
+            Everyone claims to know what happens next. Influencers promise us
+            1,000x gains. Gurus tell us when to buy. AI bots generate endless
+            predictions, each claiming to have the answer.
+          </p>
+          <p className="text-lg md:text-xl py-9 lg:max-w-lg">
+            But the market keeps doing the opposite.
+          </p>
+          <p className="text-lg md:text-xl py-9 lg:max-w-lg">
+            Chaos everywhere. Portfolios bleeding. Red candles across the
+            charts. Yet someone is still shouting, "BUY NOW!"
+          </p>
+          <p className="text-lg md:text-xl py-9 lg:max-w-lg">
+            We're getting cooked every single day. 💀
           </p>
           <button className="w-full lg:w-auto lg:self-start px-9 py-4 bg-black text-gray rounded-xl">
-            Book a consultation
+            Buy $COOKED
           </button>
         </article>
         <div className="hidden lg:block">
