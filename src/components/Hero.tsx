@@ -2,6 +2,7 @@ import React from "react";
 import Header from "./Header";
 import Image from "next/image";
 import Reveal from "./Reveal";
+import CookedButton from "./CookedButton";
 
 const tapeTickers = [
   "$COOKED",
@@ -106,9 +107,9 @@ const Hero = () => {
           <Reveal as="p" effect="up" delay={0.34} className="text-lg md:text-xl py-9 lg:max-w-lg">
             We&apos;re getting cooked every single day. 💀
           </Reveal>
-          <button className="w-full lg:w-auto lg:self-start px-9 py-4 bg-yellow text-black font-medium rounded-xl">
+          <CookedButton className="w-full lg:w-auto lg:self-start">
             Buy $COOKED
-          </button>
+          </CookedButton>
         </article>
         <div className="hidden lg:block">
           <Image

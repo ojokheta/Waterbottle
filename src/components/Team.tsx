@@ -1,5 +1,7 @@
 import React from "react";
 import TeamCard, { TeamCardProps } from "./TeamCard";
+import Reveal from "./Reveal";
+import CookedButton from "./CookedButton";
 
 const Team = () => {
   return (
@@ -18,9 +20,9 @@ const Team = () => {
       </div>
       <div className="sm:justify-self-end mt-10">
         <a href="#!" className="block">
-          <button className="w-full bg-yellow text-black font-medium px-9 py-5 rounded-[14px]">
+          <CookedButton className="w-full">
             Join the Kitchen
-          </button>
+          </CookedButton>
         </a>
       </div>
     </section>

@@ -1,5 +1,6 @@
 import Image from "next/image";
 import React from "react";
+import CookedButton from "./CookedButton";
 
 const Footer = () => {
   return (
@@ -108,9 +109,9 @@ const Footer = () => {
               placeholder="Email"
               className="bg-transparent px-4 xl:px-9 py-3 md:py-5 rounded-[14px] border border-white text-white w-full"
             />
-            <button className="bg-yellow text-black font-medium px-4 xl:px-9 py-3 md:py-5 rounded-[14px] w-full">
+            <CookedButton className="w-full">
               Subscribe to news
-            </button>
+            </CookedButton>
           </form>
         </div>
       </section>

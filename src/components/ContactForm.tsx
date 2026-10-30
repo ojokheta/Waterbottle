@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import React from "react";
+import CookedButton from "./CookedButton";
 
 const ContactForm = () => {
   const handleSubmit = (e: React.FormEvent) => {
@@ -73,13 +74,11 @@ const ContactForm = () => {
                 className="rounded-[14px] px-5 md:px-7 py-3 md:py-4 outline outline-1 mt-2"
               />
             </div>
-            <button
-              onClick={handleSubmit}
-              type="submit"
-              className="hidden lg:block bg-yellow text-black font-medium mt-4 px-9 py-4 md:py-5 rounded-[14px]"
-            >
-              Send Message
-            </button>
+            <div className="hidden lg:block mt-4">
+              <CookedButton type="submit" onClick={handleSubmit}>
+                Send Message
+              </CookedButton>
+            </div>
           </form>
         </div>
 
@@ -93,12 +92,11 @@ const ContactForm = () => {
           />
         </div>
       </div>
-      <button
-        onClick={handleSubmit}
-        className="block lg:hidden w-full bg-yellow text-black font-medium mt-8 px-9 py-5 rounded-[14px]"
-      >
-        Send Message
-      </button>
+      <div className="lg:hidden mt-8">
+        <CookedButton onClick={handleSubmit} className="w-full">
+          Send Message
+        </CookedButton>
+      </div>
     </div>
   );
 };

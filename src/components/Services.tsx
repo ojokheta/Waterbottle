@@ -1,6 +1,8 @@
 import React from "react";
 import Card from "./Card";
 import Image from "next/image";
+import Reveal from "./Reveal";
+import CookedButton from "./CookedButton";
 
 const Services = () => {
   return (
@@ -59,9 +61,9 @@ const Services = () => {
             the absurdity of believing that anyone has the market completely
             figured out.
           </p>
-          <button className="bg-yellow text-black font-medium py-5 px-5 md:px-9 rounded-2xl md:self-start">
+          <CookedButton className="md:self-start">
             Join the Kitchen
-          </button>
+          </CookedButton>
         </div>
         <div>
           <Image
