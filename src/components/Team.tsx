@@ -1,11 +1,13 @@
 import React from "react";
+import CardLinearSpread from "./CardLinearSpread";
 import TeamCard, { TeamCardProps } from "./TeamCard";
+import { X_URL } from "./social-links";
 import Reveal from "./Reveal";
 import CookedButton from "./CookedButton";
 
 const Team = () => {
   return (
-    <section className="pt-24 md:pt-36 px-4">
+    <section className="pt-24 md:pt-36 px-4 overflow-x-clip">
       <div className="flex flex-col md:flex-row text-center md:text-start items-center gap-5 md:gap-10">
         <h2 className="bg-yellow text-black text-3xl font-bold p-2 rounded-md">COMMUNITY</h2>
         <p className="max-w-md">
@@ -15,11 +17,18 @@ const Team = () => {
       </div>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 pt-8 md:pt-16">
         {CommunityDetails.map((det, idx) => (
-          <TeamCard key={idx} {...det} />
+          <CardLinearSpread key={idx} className="h-full">
+            <TeamCard {...det} />
+          </CardLinearSpread>
         ))}
       </div>
       <div className="sm:justify-self-end mt-10">
-        <a href="#!" className="block">
+        <a
+          href={X_URL}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="block"
+        >
           <CookedButton className="w-full">
             Join the Kitchen
           </CookedButton>

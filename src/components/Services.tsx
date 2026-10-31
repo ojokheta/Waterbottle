@@ -2,6 +2,7 @@ import React from "react";
 import CardCarousel from "./CardCarousel";
 import Image from "next/image";
 import CookedButton from "./CookedButton";
+import { X_URL } from "./social-links";
 
 const Services = () => {
   const cards = [
@@ -64,9 +65,16 @@ const Services = () => {
             the absurdity of believing that anyone has the market completely
             figured out.
           </p>
-          <CookedButton className="md:self-start">
-            Join the Kitchen
-          </CookedButton>
+          <a
+            href={X_URL}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="md:self-start"
+          >
+            <CookedButton className="w-full md:w-auto">
+              Join the Kitchen
+            </CookedButton>
+          </a>
         </div>
         <div>
           <Image

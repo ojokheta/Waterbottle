@@ -1,5 +1,6 @@
 import Image from "next/image";
 import React from "react";
+import { TELEGRAM_URL } from "./social-links";
 
 const CaseStudies = () => {
   return (
@@ -20,7 +21,12 @@ const CaseStudies = () => {
             memes, and keeps the $COOKED story alive. This is more than a joke
             about bad predictions.
           </p>
-          <button className="text-yellow flex items-center">
+          <a
+            href={TELEGRAM_URL}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-yellow flex items-center"
+          >
             Join Us
             <Image
               src={"/arrow-icon.svg"}
@@ -29,7 +35,7 @@ const CaseStudies = () => {
               height={15}
               className="ml-2 w-auto h-auto"
             />{" "}
-          </button>
+          </a>
         </article>
         <article className="bg-dark p-10 rounded-[45px] lg:bg-none lg:p-0 lg:rounded-none flex flex-col items-start gap-5 lg:pr-16 border-r-2 border-gray">
           <p className="text-gray text-sm">
