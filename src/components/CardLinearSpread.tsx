@@ -21,7 +21,7 @@ export default function CardLinearSpread({
   hoverIntensity = 1,
   layers = 5,
   className = "",
-  layerClassName = "rounded-[45px] border border-b-8 border-white/20 bg-black",
+  layerClassName = "rounded-[45px] border border-b-8 border-white/20 bg-dark",
 }: CardLinearSpreadProps) {
   const [isHovered, setIsHovered] = useState(false);
   const reduceMotion = useReducedMotion();

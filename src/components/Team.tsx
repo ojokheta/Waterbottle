@@ -2,7 +2,6 @@ import React from "react";
 import CardLinearSpread from "./CardLinearSpread";
 import TeamCard, { TeamCardProps } from "./TeamCard";
 import { X_URL } from "./social-links";
-import Reveal from "./Reveal";
 import CookedButton from "./CookedButton";
 
 const Team = () => {
@@ -17,7 +16,7 @@ const Team = () => {
       </div>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 pt-8 md:pt-16">
         {CommunityDetails.map((det, idx) => (
-          <CardLinearSpread key={idx} className="h-full">
+          <CardLinearSpread key={idx} className="h-full" gap={36}>
             <TeamCard {...det} />
           </CardLinearSpread>
         ))}
