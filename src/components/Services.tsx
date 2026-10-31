@@ -1,10 +1,43 @@
 import React from "react";
-import Card from "./Card";
+import CardCarousel from "./CardCarousel";
 import Image from "next/image";
-import Reveal from "./Reveal";
 import CookedButton from "./CookedButton";
 
 const Services = () => {
+  const cards = [
+    {
+      title1: "Fake",
+      title2: "Promises",
+      titleBgColor: "bg-yellow",
+      bgColor: "bg-dark",
+      imgUrl: "/seo.png",
+      iconColor: "white",
+    },
+    {
+      title1: "Fake",
+      title2: "Certainty",
+      titleBgColor: "bg-white",
+      bgColor: "bg-yellow",
+      imgUrl: "/pay.png",
+    },
+    {
+      title1: "Endless",
+      title2: "Predictions",
+      titleBgColor: "bg-white",
+      bgColor: "bg-dark",
+      imgUrl: "/social.png",
+      iconColor: "white",
+    },
+    {
+      title1: "We're All",
+      title2: "COOKED",
+      titleBgColor: "bg-yellow",
+      bgColor: "bg-dark",
+      imgUrl: "/email-marketing.png",
+      iconColor: "white",
+    },
+  ];
+
   return (
     <div className="pt-24 md:pt-36 px-4">
       <div className="flex flex-col sm:flex-row text-center sm:text-start items-center gap-5 md:gap-10">
@@ -15,38 +48,8 @@ const Services = () => {
           the top and watching our portfolios turn red.
         </p>
       </div>
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-5 md:gap-10 pt-10 lg:pt-16 place-items-center">
-        <Card
-          title1="Fake"
-          title2="Promises"
-          titleBgColor="bg-yellow"
-          bgColor="bg-dark"
-          imgUrl="/seo.png"
-          iconColor="white"
-        />
-        <Card
-          title1="Fake"
-          title2="Certainty"
-          titleBgColor="bg-white"
-          bgColor="bg-yellow"
-          imgUrl="/pay.png"
-        />
-        <Card
-          title1="Endless"
-          title2="Predictions"
-          titleBgColor="bg-white"
-          bgColor="bg-dark"
-          imgUrl="/social.png"
-          iconColor="white"
-        />
-        <Card
-          title1="We're All"
-          title2="COOKED"
-          titleBgColor="bg-yellow"
-          bgColor="bg-dark"
-          imgUrl="/email-marketing.png"
-          iconColor="white"
-        />
+      <div className="pt-10 lg:pt-16">
+        <CardCarousel cards={cards} orbit={240} float={18} sink={60} settle={55} />
       </div>
 
       <div className="relative flex justify-between items-center px-8 py-12 md:p-16 rounded-[45px] bg-dark mt-24 lg:mt-36">
