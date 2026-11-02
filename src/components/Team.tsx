@@ -6,7 +6,7 @@ import CookedButton from "./CookedButton";
 
 const Team = () => {
   return (
-    <section className="pt-24 md:pt-36 px-4 overflow-x-clip">
+    <section className="pt-24 md:pt-36 px-4 w-full max-w-5xl mx-auto overflow-x-clip">
       <div className="flex flex-col md:flex-row text-center md:text-start items-center gap-5 md:gap-10">
         <h2 className="bg-yellow text-black text-3xl font-bold p-2 rounded-md">COMMUNITY</h2>
         <p className="max-w-md">

@@ -14,6 +14,7 @@
   width: 100%;
   height: 100%;
   pointer-events: none;
+  transform: translateX(0px);
 }
 .liquid-glass-logo > canvas {
   opacity: 0;

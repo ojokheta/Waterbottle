@@ -10,7 +10,7 @@ export default function Accordion() {
   };
 
   return (
-    <section className="pt-24 sm:pt-36 px-4">
+    <section className="pt-24 sm:pt-36 px-4 w-full max-w-5xl mx-auto">
       <div className="flex flex-col sm:flex-row items-center gap-5 text-center sm:text-start sm:gap-10">
         <h2 className="bg-yellow text-black text-3xl font-bold p-2 rounded-sm">
           MISSION
