@@ -85,10 +85,6 @@ export default function Accordion() {
         </div>
         {activeSection === 2 && (
           <div className="py-7 border-t">
-            <p className="mb-4">
-              $COOKED is a meme coin project planned for BNB Chain. We believe
-              token details should be clear, accessible, and verifiable.
-            </p>
             <ul className="list-disc pl-6 space-y-2">
               <li>Token name: COOKED</li>
               <li>Ticker: $COOKED</li>
@@ -102,18 +98,6 @@ export default function Accordion() {
                 Token allocation: 75% liquidity pool, 25% team and marketing
               </li>
             </ul>
-            <p className="mt-4">
-              Transparency matters. We believe the community deserves to know how
-              the token works and how its supply is distributed. Before launch,
-              we aim to disclose the final tokenomics, contract permissions,
-              creator holdings, and liquidity arrangements clearly.
-              Liquidity-lock details should be published with verifiable proof
-              once the lock is completed. Contract permissions and the team&apos;s
-              allocation should also be disclosed so the community can assess
-              the risks independently. Never trust a claim just because it looks
-              good on a website. Verify the details. Question the hype. Don&apos;t
-              get cooked by misinformation.
-            </p>
           </div>
         )}
       </div>
