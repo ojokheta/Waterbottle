@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { Space_Grotesk } from "next/font/google";
-import { ShapePhysics } from "@/components/shape-physics";
+import VantaBackground from "@/components/VantaBackground";
 import SiteLoader from "@/components/SiteLoader";
 import "./globals.css";
 
@@ -23,11 +23,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${spaceGrotesk.variable} antialiased text-lg`}>
-        {/* Falling figures painted behind every section of the page. */}
-        <div className="fixed inset-0 z-0" aria-hidden="true">
-          <ShapePhysics height="100svh" />
-          <div className="absolute inset-0 bg-black/45" />
-        </div>
+        <VantaBackground />
         <div className="relative z-10">{children}</div>
         <SiteLoader />
       </body>
