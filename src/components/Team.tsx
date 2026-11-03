@@ -6,7 +6,7 @@ import CookedButton from "./CookedButton";
 
 const Team = () => {
   return (
-    <section className="pt-24 md:pt-36 px-4 w-full max-w-5xl mx-auto overflow-x-clip">
+    <section className="pt-24 md:pt-36 px-4 overflow-x-clip">
       <div className="flex flex-col md:flex-row text-center md:text-start items-center gap-5 md:gap-10">
         <h2 className="bg-yellow text-black text-3xl font-bold p-2 rounded-md">COMMUNITY</h2>
         <p className="max-w-md">
@@ -46,11 +46,32 @@ const CommunityDetails: TeamCardProps[] = [
       "We're building a community that questions the hype, creates the memes, and keeps the $COOKED story alive.",
   },
   {
+    imageUrl: "/jane.png",
+    name: "Embrace the Chaos",
+    position: "Community Value",
+    experience:
+      "A shared experience for everyone who has ever trusted the hype, chased the pump, bought the top, or watched a winning trade turn red.",
+  },
+  {
+    imageUrl: "/michael.png",
+    name: "Meme the Madness",
+    position: "Community Value",
+    experience:
+      "We don't need to pretend we know the future. We're here to embrace the chaos, challenge false certainty, and build something together.",
+  },
+  {
     imageUrl: "/emily.png",
     name: "The Kitchen is Open",
     position: "Community Value",
     experience:
       "The next chapter is ours to cook. 🍳🔥 $COOKED — THE ALGORITHM IS LYING.",
+  },
+  {
+    imageUrl: "/brian.png",
+    name: "No False Certainty",
+    position: "Community Value",
+    experience:
+      "This is more than a joke about bad predictions. It's a movement against fake promises and endless hype.",
   },
   {
     imageUrl: "/sarah.png",

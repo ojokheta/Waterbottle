@@ -56,15 +56,13 @@ const SiteLoader = () => {
       aria-label="Loading $COOKED"
       aria-busy={phase === "playing"}
     >
-      <div className="w-full flex items-center justify-center">
-        <LiquidGlassLogo
-          logo="/logo.svg"
-          ending="logo"
-          text="$COOKED"
-          logoColor="original"
-          style={{ height: 480 }}
-        />
-      </div>
+      <LiquidGlassLogo
+        logo="/logo.svg"
+        ending="logo"
+        text="$COOKED"
+        logoColor="original"
+        style={{ height: 480 }}
+      />
     </div>
   );
 };

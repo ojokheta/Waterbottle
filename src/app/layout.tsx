@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Space_Grotesk } from "next/font/google";
+import { ShapePhysics } from "@/components/shape-physics";
 import SiteLoader from "@/components/SiteLoader";
 import "./globals.css";
 
@@ -7,11 +8,6 @@ const spaceGrotesk = Space_Grotesk({
   subsets: ["latin"],
   variable: "--font-space-grotesk",
 });
-
-export const viewport = {
-  width: "device-width",
-  initialScale: 1,
-};
 
 export const metadata: Metadata = {
   title: "$COOKED",
@@ -27,12 +23,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${spaceGrotesk.variable} antialiased text-lg`}>
-        <div
-          className="fixed inset-0 z-0 bg-cover bg-center bg-no-repeat"
-          style={{ backgroundImage: "url('/background.jpeg')" }}
-          aria-hidden="true"
-        >
-          <div className="absolute inset-0" style={{ backgroundColor: "rgba(0, 0, 0, 0.85)" }} />
+        {/* Falling figures painted behind every section of the page. */}
+        <div className="fixed inset-0 z-0" aria-hidden="true">
+          <ShapePhysics height="100svh" />
+          <div className="absolute inset-0 bg-black/45" />
         </div>
         <div className="relative z-10">{children}</div>
         <SiteLoader />
